@@ -1,0 +1,147 @@
+
+
+
+.b1 {
+    background-color: white;
+    border: 2px solid #6E07F3;
+    border-radius: 35px;
+    padding: 10px;
+    color: #8A00C4;
+    font-size: 15px;    
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.b1:hover {
+    background-color: #6E07F3;
+    color: white;
+    cursor: pointer;
+}
+.h-text {
+    display: flex;
+    
+    align-items: center;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     padding: 0 40px; 
+}
+.header-container a:hover {
+    color: #6E07F3;
+    cursor: pointer;
+}
+.header-container svg:hover {
+    cursor: pointer;
+}
+.body1 {
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 130%;
+    padding-top: 100px;
+    gap: 50px;
+}
+.icon {
+    height: 85px;
+    width: 85px;
+    color: #6E07F3;
+}
+
+.text1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.img1{
+    height: auto;
+    width: 215px;
+    padding-top: 25px;
+}
+.img2 {
+    height: 350px;
+    display: block;
+}
+.purple {
+    background-color: #6E07F3;
+    height: 500px;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    
+    
+}
+.purple p {
+    padding-top: 25px;
+    max-width: 700px;
+   
+}
+.footer {
+    display: flex;
+    background-color: #6E07F3;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+   
+}
+.icon2 {
+    height: 85px;
+    width: 85px;
+    color: #ffff;
+   
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials a {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #ffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    
+}
+
+.socials a:hover {
+    background-color: #ffff;
+    color: #6E07F3;
+}
+
+.social-icon {
+    width: 18px;
+    height: 18px;
+}
+.sub-text{
+     color: #EBEBEB;
+    font-size: 10px;
+    max-width: 300px;
+    text-align: center;
+    font-size: 15px;
+}
+.text-f {
+     color: #EBEBEB;
+    font-size: larger;
+    max-width: 300px;
+    text-align: center;
+}
+footer img {
+    height: auto;
+    width: 175px;
+}
