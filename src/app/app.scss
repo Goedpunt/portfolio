@@ -1,8 +1,5 @@
-
-
-
 .b1 {
-    background-color: white;
+    background-color: #ffffff;
     border: 2px solid #6E07F3;
     border-radius: 35px;
     padding: 10px;
@@ -10,11 +7,10 @@
     font-size: 15px;    
     padding-left: 15px;
     padding-right: 15px;
-    
 }
 .b1:hover {
     background-color: #6E07F3;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
 }
 .h-text {
@@ -22,15 +18,13 @@
     
     align-items: center;
 }
-
-
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
      padding: 0 40px; 
 }
-.header-container a:hover {
+.header-container p:hover {
     color: #6E07F3;
     cursor: pointer;
 }
@@ -50,9 +44,7 @@
 .icon {
     height: 85px;
     width: 85px;
-    color: #6E07F3;
 }
-
 .text1 {
     display: flex;
     align-items: center;
@@ -76,15 +68,12 @@
     justify-content: center;
     text-align: center;
     color: white;
-    
-    
 }
 .purple p {
     padding-top: 25px;
     max-width: 700px;
-   
 }
-.footer {
+.footer1 {
     display: flex;
     background-color: #6E07F3;
     height: 500px;
@@ -92,38 +81,8 @@
     align-items: center;
     flex-direction: column;
     gap: 25px;
-   
+    padding: 50px 20px;
 }
-.icon2 {
-    height: 85px;
-    width: 85px;
-    color: #ffff;
-   
-}
-
-.socials {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.socials a {
-    width: 45px;
-    height: 45px;
-    border: 2px solid #ffff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffff;
-    
-}
-
-.socials a:hover {
-    background-color: #ffff;
-    color: #6E07F3;
-}
-
 .social-icon {
     width: 18px;
     height: 18px;
@@ -141,7 +100,14 @@
     max-width: 300px;
     text-align: center;
 }
-footer img {
+.footer-img {
     height: auto;
     width: 175px;
+    display: flex;
+    justify-content: center;
+}
+.icons-pos {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
 }
