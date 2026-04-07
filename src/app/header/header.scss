@@ -1,14 +1,12 @@
-.b1 {
+.say-hello-btn {
   background-color: #ffffff;
   border: 2px solid #6E07F3;
   border-radius: 35px;
-  padding: 10px;
+  padding: 10px 15px;
   color: #8A00C4;
   font-size: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
-.b1:hover {
+.say-hello-btn:hover {
   background-color: #6E07F3;
   color: #ffffff;
   cursor: pointer;
@@ -23,15 +21,12 @@
   color: #6E07F3;
   cursor: pointer;
 }
-.header-container svg:hover {
-  cursor: pointer;
+.nav-logo {
+  height: 85px;
+  width: 85px;
 }
-.text1 {
+.nav-links {
   display: flex;
   align-items: center;
   gap: 20px;
-}
-.icon {
-  height: 85px;
-  width: 85px;
 }

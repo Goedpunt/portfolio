@@ -1,4 +1,4 @@
-.footer1 {
+.footer-section {
   display: flex;
   background-color: #6E07F3;
   height: 500px;
@@ -12,30 +12,28 @@
   width: 18px;
   height: 18px;
 }
-.sub-text {
+.footer-subtext {
   color: #EBEBEB;
   max-width: 300px;
   text-align: center;
   font-size: 15px;
 }
-.text-f {
+.footer-tagline {
   color: #EBEBEB;
   font-size: larger;
   max-width: 300px;
   text-align: center;
 }
-.footer-img {
+.bulma-badge {
   height: auto;
   width: 175px;
-  display: flex;
-  justify-content: center;
 }
-.icons-pos {
+.footer-logo {
+  height: 85px;
+  width: 85px;
+}
+.social-icons {
   display: flex;
   flex-direction: row;
   gap: 25px;
-}
-.icon {
-  height: 85px;
-  width: 85px;
 }

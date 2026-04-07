@@ -1,4 +1,4 @@
-.body1 {
+.hero-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,12 +8,12 @@
   padding-top: 100px;
   gap: 50px;
 }
-.img1 {
+.avatar-img {
   height: auto;
   width: 215px;
   padding-top: 25px;
 }
-.img2 {
+.devices-img {
   height: 350px;
   display: block;
 }

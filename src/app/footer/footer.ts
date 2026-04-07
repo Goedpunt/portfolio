@@ -1,9 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
-  imports: [],
+  imports: [NgFor],
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })
-export class Footer {}
+export class Footer {
+  logoUrl = input<string>('');
+  socialLinks = input<{ icon: string; href: string }[]>([]);
+}
