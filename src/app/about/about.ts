@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [CardModule],
   templateUrl: './about.html',
   styleUrl: './about.scss',
 })

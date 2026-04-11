@@ -1,9 +1,11 @@
 import { Component, input } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { ButtonModule } from 'primeng/button';
+import { DividerModule } from 'primeng/divider';
 
 @Component({
   selector: 'app-footer',
-  imports: [NgFor],
+  imports: [NgFor, ButtonModule, DividerModule],
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })

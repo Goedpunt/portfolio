@@ -4,3 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #ffffff;
+  color: #1a0033;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode {
+  background-color: #1a0033;
+  color: #f5f0ff;
+}

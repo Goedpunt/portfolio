@@ -3,11 +3,11 @@
     <img [src]="logoUrl()" class="footer-logo" />
   </a>
   <p class="footer-tagline">Living, learning, & leveling up one day at a time.</p>
+  <p-divider styleClass="footer-divider" />
   <div class="social-icons">
     <a *ngFor="let link of socialLinks()" [href]="link.href">
       <img [src]="link.icon" class="social-icon" />
     </a>
   </div>
   <p class="footer-subtext">Handcrafted by me ⓒ twentytwentyfour</p>
-  <img class="bulma-badge" src="https://mattfarley.ca/img/made-with-bulma--white.png" />
 </footer>
