@@ -4,6 +4,7 @@
   </a>
   <div class="nav-links">
     <p>Mentorship</p>
-    <button class="say-hello-btn">Say Hello</button>
+    <p-toggleswitch [ngModel]="isDark()" (ngModelChange)="themeToggle.emit()"></p-toggleswitch>
+    <p-button label="Say Hello" rounded outlined />
   </div>
 </header>

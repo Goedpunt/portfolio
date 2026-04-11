@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { Header } from './header/header';
 import { Hero } from './hero/hero';
 import { About } from './about/about';
@@ -11,7 +11,9 @@ import { Footer } from './footer/footer';
   styleUrl: './app.scss',
 })
 export class AppComponent {
-  avatarUrl = './images/matt.svg';
+  isDark = signal(false);
+
+  avatarUrl = './images/mf-avatar.svg';
   devicesUrl = './images/hero-devices.svg';
   footerLogoUrl = './images/matt2.svg';
   socialLinks = [
@@ -22,4 +24,9 @@ export class AppComponent {
     { icon: './images/pinterest.svg', href: '#' },
     { icon: './images/mail.svg', href: '#' },
   ];
+
+  toggleTheme() {
+    this.isDark.update((v) => !v);
+    document.body.classList.toggle('dark-mode');
+  }
 }
