@@ -1,57 +1,7 @@
-<div>
-  <header class="header-container">
-    <a href="#">
-      <img [src]="'./images/matt.svg'" class="icon" />
-    </a>
-    <div class="text1">
-      <p>Mentorship</p>
-      <button class="b1">Say Hello</button>
-    </div>
-  </header>
-  <div class="body1">
-    <div>
-      <h2>Designer, Frontend Developer & Mentor</h2>
-      <p>I design and code beautifully simple things, and I love what I do.</p>
-    </div>
-    <img class="img1" src="https://mattfarley.ca/img/mf-avatar.svg" />
-    <img class="img2" src="https://mattfarley.ca/img/hero-devices.svg" />
-  </div>
-  <div class="purple">
-    <h2>Hi, I’m Matt. Nice to meet you.</h2>
-    <p>
-      Since beginning my journey as a freelance designer 12 years ago, I've done remote work for
-      agencies, consulted for startups, and collaborated with talented people to create digital
-      products for both business and consumer use. I'm quietly confident, naturally curious, and
-      perpetually working on improving my chops.
-    </p>
-  </div>
-  <footer class="footer1">
-    <a href="#">
-      <img [src]="'./images/matt2.svg'" class="icon" />
-    </a>
-    <p class="text-f">Living, learning, & leveling up one day at a time.</p>
-    <div class="icons-pos">
-      <a href="#">
-        <img [src]="'./images/twitter.svg'" class="social-icon" />
-      </a>
-      <a href="#">
-        <img [src]="'./images/basket.svg'" class="social-icon" />
-      </a>
-      <a href="#">
-        <img [src]="'./images/linkdin.svg'" class="social-icon" />
-      </a>
-      <a href="#">
-        <img [src]="'./images/ih.svg'" class="social-icon" />
-      </a>
-      <a href="#">
-        <img [src]="'./images/pinterest.svg'" class="social-icon" />
-      </a>
-      <a href="#">
-        <img [src]="'./images/mail.svg'" class="social-icon" />
-      </a>
-    </div>
-    <p class="sub-text">Handcrafted by me ⓒ twentytwentyfour</p>
-
-    <img class="footer-img" src="https://mattfarley.ca/img/made-with-bulma--white.png" />
-  </footer>
-</div>
+<app-header></app-header>
+<app-hero
+  [avatarUrl]="'/images/mf-avatar.svg'"
+  [devicesUrl]="'/images/hero-devices.svg'"
+></app-hero>
+<app-about></app-about>
+<app-footer [logoUrl]="footerLogoUrl" [socialLinks]="socialLinks"></app-footer>

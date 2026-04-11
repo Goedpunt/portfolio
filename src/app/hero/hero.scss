@@ -1,0 +1,19 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 130%;
+  padding-top: 100px;
+  gap: 50px;
+}
+.avatar-img {
+  height: auto;
+  width: 215px;
+  padding-top: 25px;
+}
+.devices-img {
+  height: 350px;
+  display: block;
+}
