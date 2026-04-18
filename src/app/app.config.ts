@@ -67,6 +67,24 @@ const MyPreset = definePreset(Aura, {
       },
     },
   },
+  components: {
+    card: {
+      colorScheme: {
+        light: {
+          root: {
+            background: '{primary.700}',
+            color: '{primary.50}',
+          },
+        },
+        dark: {
+          root: {
+            background: '{primary.800}',
+            color: '{primary.50}',
+          },
+        },
+      },
+    },
+  },
 });
 
 export const appConfig: ApplicationConfig = {

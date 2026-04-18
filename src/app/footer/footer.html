@@ -1,13 +1,15 @@
 <footer class="footer-section">
   <a href="#">
-    <img [src]="logoUrl()" class="footer-logo" alt="Logo" />
+    <img [src]="logoUrl()" class="footer-logo" alt="Matt — home" />
   </a>
   <p class="footer-tagline">Living, learning, & leveling up one day at a time.</p>
-  <p-divider styleClass="footer-divider" />
+  <div class="divider-wrapper">
+    <p-divider />
+  </div>
   <div class="social-icons">
-    @for (link of socialLinks(); track link.icon) {
+    @for (link of socialLinks(); track link.href) {
       <a [href]="link.href">
-        <img [src]="link.icon" class="social-icon" [alt]="link.icon" />
+        <img [src]="link.icon" class="social-icon" [alt]="link.label" />
       </a>
     }
   </div>

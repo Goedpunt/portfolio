@@ -6,30 +6,37 @@
   flex-direction: column;
   gap: 25px;
   padding: 50px 20px;
+  transition: background-color 0.4s ease;
 }
+
 .footer-logo {
   height: 85px;
   width: 85px;
 }
+
 .footer-tagline {
   color: var(--p-primary-100);
   font-size: larger;
   max-width: 300px;
   text-align: center;
 }
+
 .footer-subtext {
   color: var(--p-primary-200);
   font-size: 15px;
   text-align: center;
 }
+
 .social-icons {
   display: flex;
   gap: 25px;
 }
+
 .social-icon {
   width: 18px;
   height: 18px;
 }
-.footer-divider {
+
+.divider-wrapper {
   width: 300px;
 }
