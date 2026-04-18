@@ -1,13 +1,15 @@
 <footer class="footer-section">
   <a href="#">
-    <img [src]="logoUrl()" class="footer-logo" />
+    <img [src]="logoUrl()" class="footer-logo" alt="Logo" />
   </a>
   <p class="footer-tagline">Living, learning, & leveling up one day at a time.</p>
   <p-divider styleClass="footer-divider" />
   <div class="social-icons">
-    <a *ngFor="let link of socialLinks()" [href]="link.href">
-      <img [src]="link.icon" class="social-icon" />
-    </a>
+    @for (link of socialLinks(); track link.icon) {
+      <a [href]="link.href">
+        <img [src]="link.icon" class="social-icon" [alt]="link.icon" />
+      </a>
+    }
   </div>
   <p class="footer-subtext">Handcrafted by me ⓒ twentytwentyfour</p>
 </footer>

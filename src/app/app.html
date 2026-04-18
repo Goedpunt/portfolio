@@ -1,6 +1,4 @@
-<div [class.dark-mode]="isDark()">
-  <app-header [isDark]="isDark()" (themeToggle)="toggleTheme()"></app-header>
-  <app-hero [avatarUrl]="avatarUrl" [devicesUrl]="devicesUrl"></app-hero>
-  <app-about></app-about>
-  <app-footer [logoUrl]="footerLogoUrl" [socialLinks]="socialLinks"></app-footer>
-</div>
+<app-header [isDark]="isDark()" (themeToggle)="toggleTheme()"></app-header>
+<app-hero [avatarUrl]="avatarUrl" [devicesUrl]="devicesUrl"></app-hero>
+<app-about></app-about>
+<app-footer [logoUrl]="footerLogoUrl" [socialLinks]="socialLinks"></app-footer>

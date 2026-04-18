@@ -6,12 +6,7 @@
 }
 
 body {
-  background-color: #ffffff;
-  color: #1a0033;
+  background-color: var(--p-surface-0);
+  color: var(--p-text-color);
   transition: background-color 0.4s ease, color 0.4s ease;
-}
-
-body.dark-mode {
-  background-color: #1a0033;
-  color: #f5f0ff;
 }
