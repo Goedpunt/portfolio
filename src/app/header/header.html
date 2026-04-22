@@ -3,13 +3,21 @@
     <img src="./images/matt.svg" class="nav-logo" alt="Matt — home" />
   </a>
   <div class="nav-links">
-    <p>Mentorship</p>
+    <p>{{ 'header.mentorship' | translate }}</p>
     <p-toggleswitch
       [ngModel]="isDark()"
       (ngModelChange)="themeToggle.emit()"
       ariaLabel="Toggle dark mode"
       [title]="isDark() ? 'Switch to light mode' : 'Switch to dark mode'"
     ></p-toggleswitch>
-    <p-button label="Say Hello" rounded outlined />
+    <p-select
+      [options]="languages"
+      [ngModel]="currentLang()"
+      (ngModelChange)="onLangChange($event)"
+      optionLabel="label"
+      optionValue="value"
+      styleClass="lang-select"
+    ></p-select>
+    <p-button label="{{ 'header.sayHello' | translate }}" rounded outlined />
   </div>
 </header>

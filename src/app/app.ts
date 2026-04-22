@@ -3,6 +3,7 @@ import { Header } from './header/header';
 import { Hero } from './hero/hero';
 import { About } from './about/about';
 import { Footer } from './footer/footer';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -24,8 +25,13 @@ export class App {
   ];
 
   isDark = signal(this.getInitialTheme());
+  currentLang = signal(localStorage.getItem('lang') || 'en');
 
-  constructor() {
+  constructor(private translate: TranslateService) {
+    translate.addLangs(['en', 'nl']);
+    translate.setDefaultLang('en');
+    translate.use(this.currentLang());
+
     effect(() => {
       const dark = this.isDark();
       document.documentElement.classList.toggle('dark-mode', dark);
@@ -41,5 +47,11 @@ export class App {
 
   toggleTheme() {
     this.isDark.update((v) => !v);
+  }
+
+  switchLang(lang: string) {
+    this.currentLang.set(lang);
+    this.translate.use(lang);
+    localStorage.setItem('lang', lang);
   }
 }

@@ -3,6 +3,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeuix/themes/aura';
 import { definePreset } from '@primeuix/themes';
+import { provideHttpClient } from '@angular/common/http';
+import { provideTranslateService } from '@ngx-translate/core';
+import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 
 const MyPreset = definePreset(Aura, {
   semantic: {
@@ -44,14 +47,74 @@ const MyPreset = definePreset(Aura, {
       colorScheme: {
         light: {
           root: {
-            background: '{primary.600}',
+            background: '{primary.500}',
             color: '{primary.50}',
           },
         },
         dark: {
           root: {
-            background: '{primary.300}',
-            color: '#1a0033',
+            background: '{primary.500}',
+            color: '#ffffff',
+          },
+        },
+      },
+    },
+    button: {
+      colorScheme: {
+        light: {
+          outlined: {
+            primary: {
+              borderColor: '{primary.600}',
+              color: '{primary.600}',
+              hoverBackground: '{primary.200}',
+            },
+          },
+        },
+        dark: {
+          outlined: {
+            primary: {
+              borderColor: '{primary.200}',
+              color: '{primary.200}',
+              hoverBackground: '{primary.50}',
+            },
+          },
+        },
+      },
+    },
+    select: {
+      colorScheme: {
+        light: {
+          root: {
+            background: '#ffffff',
+            borderColor: '{primary.600}',
+            color: '{primary.600}',
+          },
+          overlay: {
+            background: '#ffffff',
+            borderColor: '{primary.600}',
+          },
+          option: {
+            focusBackground: '{primary.100}',
+            selectedBackground: '{primary.600}',
+            selectedColor: '#ffffff',
+            color: '{primary.600}',
+          },
+        },
+        dark: {
+          root: {
+            background: '#1a0033',
+            borderColor: '{primary.200}',
+            color: '{primary.200}',
+          },
+          overlay: {
+            background: '#1a0033',
+            borderColor: '{primary.200}',
+          },
+          option: {
+            focusBackground: '{primary.400}',
+            selectedBackground: '{primary.200}',
+            selectedColor: '#1a0033',
+            color: '{primary.200}',
           },
         },
       },
@@ -61,6 +124,7 @@ const MyPreset = definePreset(Aura, {
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideHttpClient(),
     provideAnimationsAsync(),
     providePrimeNG({
       theme: {
@@ -68,5 +132,9 @@ export const appConfig: ApplicationConfig = {
         options: { darkModeSelector: '.dark-mode' },
       },
     }),
+    provideTranslateService({
+      fallbackLang: 'en',
+    }),
+    ...provideTranslateHttpLoader(),
   ],
 };

@@ -1,0 +1,18 @@
+{
+  "header": {
+    "mentorship": "Mentorschap",
+    "sayHello": "Zeg Hallo"
+  },
+  "hero": {
+    "title": "Designer, Frontend Ontwikkelaar & Mentor",
+    "subtitle": "Ik ontwerp en codeer prachtig eenvoudige dingen, en ik hou van wat ik doe."
+  },
+  "about": {
+    "title": "Hoi, ik ben Matt. Leuk je te ontmoeten.",
+    "text": "Sinds ik 12 jaar geleden begon als freelance designer, heb ik op afstand gewerkt voor bureaus, startups geadviseerd en samengewerkt met getalenteerde mensen om digitale producten te maken voor zowel zakelijk als consumentengebruik. Ik ben rustig zelfverzekerd, van nature nieuwsgierig en altijd bezig met het verbeteren van mijn vaardigheden."
+  },
+  "footer": {
+    "tagline": "Leven, leren & elke dag een beetje beter worden.",
+    "credit": "Met liefde gemaakt door mij ⓒ tweeduizendvierentwintig"
+  }
+}
