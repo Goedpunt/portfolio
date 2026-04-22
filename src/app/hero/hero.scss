@@ -8,11 +8,23 @@
   padding-top: 100px;
   gap: 50px;
 }
+
+.hero-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--p-primary-color);
+}
+
+.hero-text p {
+  color: var(--p-text-muted-color);
+  margin-top: 10px;
+}
+
 .avatar-img {
   height: auto;
   width: 215px;
-  padding-top: 25px;
 }
+
 .devices-img {
   height: 350px;
   display: block;

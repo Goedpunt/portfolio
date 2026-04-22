@@ -1,7 +1,4 @@
-<app-header></app-header>
-<app-hero
-  [avatarUrl]="'/images/mf-avatar.svg'"
-  [devicesUrl]="'/images/hero-devices.svg'"
-></app-hero>
+<app-header [isDark]="isDark()" (themeToggle)="toggleTheme()"></app-header>
+<app-hero [avatarUrl]="avatarUrl" [devicesUrl]="devicesUrl"></app-hero>
 <app-about></app-about>
 <app-footer [logoUrl]="footerLogoUrl" [socialLinks]="socialLinks"></app-footer>
