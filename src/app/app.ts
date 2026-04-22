@@ -11,8 +11,8 @@ import { Footer } from './footer/footer';
   styleUrl: './app.scss',
 })
 export class App {
-  avatarUrl = 'https://mattfarley.ca/img/mf-avatar.svg';
-  devicesUrl = 'https://mattfarley.ca/img/hero-devices.svg';
+  avatarUrl = './images/mf-avatar.svg';
+  devicesUrl = './images/hero-devices.svg';
   footerLogoUrl = './images/matt2.svg';
   socialLinks = [
     { icon: './images/twitter.svg', href: '#', label: 'Twitter' },

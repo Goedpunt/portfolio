@@ -4,7 +4,12 @@
   </a>
   <div class="nav-links">
     <p>Mentorship</p>
-    <p-toggleswitch [ngModel]="isDark()" (ngModelChange)="themeToggle.emit()"></p-toggleswitch>
+    <p-toggleswitch
+      [ngModel]="isDark()"
+      (ngModelChange)="themeToggle.emit()"
+      ariaLabel="Toggle dark mode"
+      [title]="isDark() ? 'Switch to light mode' : 'Switch to dark mode'"
+    ></p-toggleswitch>
     <p-button label="Say Hello" rounded outlined />
   </div>
 </header>

@@ -21,37 +21,9 @@ const MyPreset = definePreset(Aura, {
           900: '#3b0764',
           950: '#2e0550',
         },
-        surface: {
-          0: '#ffffff',
-          50: '#f5f0ff',
-          100: '#ede0ff',
-          200: '#d8bfff',
-          300: '#bf94ff',
-          400: '#a855f7',
-          500: '#9333ea',
-          600: '#7e22ce',
-          700: '#6b21a8',
-          800: '#581c87',
-          900: '#3b0764',
-          950: '#2e0550',
-        },
       },
       dark: {
         primary: {
-          50: '#2e0550',
-          100: '#3b0764',
-          200: '#4a0080',
-          300: '#581c87',
-          400: '#6b21a8',
-          500: '#7e22ce',
-          600: '#9333ea',
-          700: '#a855f7',
-          800: '#bf94ff',
-          900: '#ede0ff',
-          950: '#f5f0ff',
-        },
-        surface: {
-          0: '#1a0033',
           50: '#2e0550',
           100: '#3b0764',
           200: '#4a0080',
@@ -72,14 +44,14 @@ const MyPreset = definePreset(Aura, {
       colorScheme: {
         light: {
           root: {
-            background: '{primary.700}',
+            background: '{primary.600}',
             color: '{primary.50}',
           },
         },
         dark: {
           root: {
-            background: '{primary.800}',
-            color: '{primary.50}',
+            background: '{primary.300}',
+            color: '#1a0033',
           },
         },
       },
