@@ -1,9 +1,9 @@
-import { Component, signal, effect } from '@angular/core';
+import { Component, signal, effect, inject } from '@angular/core';
 import { Header } from './header/header';
 import { Hero } from './hero/hero';
 import { About } from './about/about';
 import { Footer } from './footer/footer';
-import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from './language.service';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +12,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './app.scss',
 })
 export class App {
+  private languageService = inject(LanguageService);
+
   avatarUrl = './images/mf-avatar.svg';
   devicesUrl = './images/hero-devices.svg';
   footerLogoUrl = './images/matt2.svg';
@@ -25,12 +27,10 @@ export class App {
   ];
 
   isDark = signal(this.getInitialTheme());
-  currentLang = signal(localStorage.getItem('lang') || 'en');
+  currentLang = signal(this.languageService.getCurrentLang());
 
-  constructor(private translate: TranslateService) {
-    translate.addLangs(['en', 'nl']);
-    translate.setDefaultLang('en');
-    translate.use(this.currentLang());
+  constructor() {
+    this.languageService.init();
 
     effect(() => {
       const dark = this.isDark();
@@ -51,7 +51,6 @@ export class App {
 
   switchLang(lang: string) {
     this.currentLang.set(lang);
-    this.translate.use(lang);
-    localStorage.setItem('lang', lang);
+    this.languageService.setLanguage(lang);
   }
 }

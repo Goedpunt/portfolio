@@ -7,7 +7,7 @@
     <p-divider />
   </div>
   <div class="social-icons">
-    @for (link of socialLinks(); track link.label) {
+    @for (link of socialLinks(); track link.icon) {
       <a [href]="link.href">
         <img [src]="link.icon" class="social-icon" [alt]="link.label" />
       </a>

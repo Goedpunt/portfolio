@@ -8,7 +8,7 @@
       [ngModel]="isDark()"
       (ngModelChange)="themeToggle.emit()"
       ariaLabel="Toggle dark mode"
-      [title]="isDark() ? 'Switch to light mode' : 'Switch to dark mode'"
+      [title]="(isDark() ? 'header.switchToLight' : 'header.switchToDark') | translate"
     ></p-toggleswitch>
     <p-select
       [options]="languages"
@@ -18,6 +18,6 @@
       optionValue="value"
       styleClass="lang-select"
     ></p-select>
-    <p-button label="{{ 'header.sayHello' | translate }}" rounded outlined />
+    <p-button [label]="'header.sayHello' | translate" rounded outlined />
   </div>
 </header>

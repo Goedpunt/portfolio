@@ -1,7 +1,12 @@
 {
+  "app": {
+    "pageTitle": "Matt Farley — Designer, Developer & Mentor"
+  },
   "header": {
     "mentorship": "Mentorship",
-    "sayHello": "Say Hello"
+    "sayHello": "Say Hello",
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
   },
   "hero": {
     "title": "Designer, Frontend Developer & Mentor",
