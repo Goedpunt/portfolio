@@ -1,23 +1,23 @@
 {
-  "app": {
-    "pageTitle": "Matt Farley — Designer, Developer & Mentor"
+  "APP": {
+    "PAGE_TITLE": "Matt Farley — Designer, Developer & Mentor"
   },
-  "header": {
-    "mentorship": "Mentorship",
-    "sayHello": "Say Hello",
-    "switchToLight": "Switch to light mode",
-    "switchToDark": "Switch to dark mode"
+  "HEADER": {
+    "MENTORSHIP": "Mentorship",
+    "SAY_HELLO": "Say Hello",
+    "SWITCH_TO_LIGHT": "Switch to light mode",
+    "SWITCH_TO_DARK": "Switch to dark mode"
   },
-  "hero": {
-    "title": "Designer, Frontend Developer & Mentor",
-    "subtitle": "I design and code beautifully simple things, and I love what I do."
+  "HERO": {
+    "TITLE": "Designer, Frontend Developer & Mentor",
+    "SUBTITLE": "I design and code beautifully simple things, and I love what I do."
   },
-  "about": {
-    "title": "Hi, I'm Matt. Nice to meet you.",
-    "text": "Since beginning my journey as a freelance designer 12 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops."
+  "ABOUT": {
+    "TITLE": "Hi, I'm Matt. Nice to meet you.",
+    "TEXT": "Since beginning my journey as a freelance designer 12 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops."
   },
-  "footer": {
-    "tagline": "Living, learning, & leveling up one day at a time.",
-    "credit": "Handcrafted by me ⓒ twentytwentyfour"
+  "FOOTER": {
+    "TAGLINE": "Living, learning, & leveling up one day at a time.",
+    "CREDIT": "Handcrafted by me ⓒ twentytwentyfour"
   }
 }

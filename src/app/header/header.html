@@ -3,12 +3,12 @@
     <img src="./images/matt.svg" class="nav-logo" alt="Matt — home" />
   </a>
   <div class="nav-links">
-    <p>{{ 'header.mentorship' | translate }}</p>
+    <p>{{ 'HEADER.MENTORSHIP' | translate }}</p>
     <p-toggleswitch
       [ngModel]="isDark()"
       (ngModelChange)="themeToggle.emit()"
       ariaLabel="Toggle dark mode"
-      [title]="(isDark() ? 'header.switchToLight' : 'header.switchToDark') | translate"
+      [title]="(isDark() ? 'HEADER.SWITCH_TO_LIGHT' : 'HEADER.SWITCH_TO_DARK') | translate"
     ></p-toggleswitch>
     <p-select
       [options]="languages"
@@ -18,6 +18,6 @@
       optionValue="value"
       styleClass="lang-select"
     ></p-select>
-    <p-button [label]="'header.sayHello' | translate" rounded outlined />
+    <p-button [label]="'HEADER.SAY_HELLO' | translate" rounded outlined />
   </div>
 </header>
