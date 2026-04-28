@@ -2,16 +2,16 @@
   <a href="#">
     <img [src]="logoUrl()" class="footer-logo" alt="Matt — home" />
   </a>
-  <p class="footer-tagline">Living, learning, & leveling up one day at a time.</p>
+  <p class="footer-tagline">{{ 'FOOTER.TAGLINE' | translate }}</p>
   <div class="divider-wrapper">
     <p-divider />
   </div>
   <div class="social-icons">
-    @for (link of socialLinks(); track link.href) {
+    @for (link of socialLinks(); track link.icon) {
       <a [href]="link.href">
         <img [src]="link.icon" class="social-icon" [alt]="link.label" />
       </a>
     }
   </div>
-  <p class="footer-subtext">Handcrafted by me ⓒ twentytwentyfour</p>
+  <p class="footer-subtext">{{ 'FOOTER.CREDIT' | translate }}</p>
 </footer>

@@ -5,12 +5,18 @@
   padding: 0 40px;
   height: 80px;
 }
+
 .nav-logo {
   height: 85px;
   width: 85px;
 }
+
 .nav-links {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.lang-select {
+  width: 180px;
 }

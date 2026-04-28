@@ -1,9 +1,11 @@
 import { Component, input } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero',
+  imports: [TranslateModule],
   templateUrl: './hero.html',
-  styleUrls: ['./hero.scss'],
+  styleUrl: './hero.scss',
 })
 export class Hero {
   avatarUrl = input<string>('');

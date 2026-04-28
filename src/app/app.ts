@@ -1,8 +1,9 @@
-import { Component, signal, effect } from '@angular/core';
+import { Component, signal, effect, inject } from '@angular/core';
 import { Header } from './header/header';
 import { Hero } from './hero/hero';
 import { About } from './about/about';
 import { Footer } from './footer/footer';
+import { LanguageService } from './language.service';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,8 @@ import { Footer } from './footer/footer';
   styleUrl: './app.scss',
 })
 export class App {
+  private languageService = inject(LanguageService);
+
   avatarUrl = './images/mf-avatar.svg';
   devicesUrl = './images/hero-devices.svg';
   footerLogoUrl = './images/matt2.svg';
@@ -24,8 +27,11 @@ export class App {
   ];
 
   isDark = signal(this.getInitialTheme());
+  currentLang = signal(this.languageService.getCurrentLang());
 
   constructor() {
+    this.languageService.init();
+
     effect(() => {
       const dark = this.isDark();
       document.documentElement.classList.toggle('dark-mode', dark);
@@ -41,5 +47,10 @@ export class App {
 
   toggleTheme() {
     this.isDark.update((v) => !v);
+  }
+
+  switchLang(lang: string) {
+    this.currentLang.set(lang);
+    this.languageService.setLanguage(lang);
   }
 }
