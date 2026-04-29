@@ -1,0 +1,50 @@
+<app-header
+  [isDark]="isDark()"
+  [currentLang]="currentLang()"
+  (themeToggle)="toggleTheme()"
+  (langChange)="switchLang($event)"
+></app-header>
+<div class="contact-page">
+  <div class="contact-container">
+    <a routerLink="/" class="back-link">← Back</a>
+    <h1>{{ 'CONTACT.TITLE' | translate }}</h1>
+
+    @if (success$ | async) {
+      <p-message severity="success" [text]="'CONTACT.SUCCESS' | translate" />
+    }
+
+    @if (error$ | async; as error) {
+      <p-message severity="error" [text]="'CONTACT.ERROR' | translate" />
+    }
+
+    @if (!(success$ | async)) {
+      <form class="contact-form" (ngSubmit)="onSubmit()">
+        <div class="form-field">
+          <label for="name">{{ 'CONTACT.NAME' | translate }}</label>
+          <input pInputText id="name" [(ngModel)]="name" name="name" type="text" required />
+        </div>
+        <div class="form-field">
+          <label for="email">{{ 'CONTACT.EMAIL' | translate }}</label>
+          <input pInputText id="email" [(ngModel)]="email" name="email" type="email" required />
+        </div>
+        <div class="form-field">
+          <label for="message">{{ 'CONTACT.MESSAGE' | translate }}</label>
+          <textarea
+            pTextarea
+            id="message"
+            [(ngModel)]="message"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <p-button
+          type="submit"
+          [label]="'CONTACT.SUBMIT' | translate"
+          [loading]="(submitting$ | async) ?? false"
+          rounded
+        />
+      </form>
+    }
+  </div>
+</div>

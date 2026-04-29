@@ -1,0 +1,39 @@
+{
+  "APP": {
+    "PAGE_TITLE": "Matt Farley — Designer, Developer & Mentor"
+  },
+  "HEADER": {
+    "MENTORSHIP": "Mentorship",
+<<<<<<< HEAD
+    "SAY_HELLO": "Say Hello",
+=======
+    "CONTACT_ME": "Contact Me",
+>>>>>>> 9b4add6 (contact form)
+    "SWITCH_TO_LIGHT": "Switch to light mode",
+    "SWITCH_TO_DARK": "Switch to dark mode"
+  },
+  "HERO": {
+    "TITLE": "Designer, Frontend Developer & Mentor",
+    "SUBTITLE": "I design and code beautifully simple things, and I love what I do."
+  },
+  "ABOUT": {
+    "TITLE": "Hi, I'm Matt. Nice to meet you.",
+    "TEXT": "Since beginning my journey as a freelance designer 12 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops."
+  },
+  "FOOTER": {
+    "TAGLINE": "Living, learning, & leveling up one day at a time.",
+    "CREDIT": "Handcrafted by me ⓒ twentytwentyfour"
+<<<<<<< HEAD
+=======
+  },
+  "CONTACT": {
+    "TITLE": "Contact Me",
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "MESSAGE": "Message",
+    "SUBMIT": "Send Message",
+    "SUCCESS": "Your message has been sent!",
+    "ERROR": "Something went wrong. Please try again."
+>>>>>>> 9b4add6 (contact form)
+  }
+}

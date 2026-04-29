@@ -1,49 +1,20 @@
-<<<<<<< HEAD
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
-@Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-=======
-<<<<<<< HEAD
 import { Component, signal, effect, inject } from '@angular/core';
-=======
-import { Component } from '@angular/core';
-<<<<<<< HEAD
->>>>>>> 9b4add6 (contact form)
-import { Header } from './header/header';
-import { Hero } from './hero/hero';
-import { About } from './about/about';
-import { Footer } from './footer/footer';
-<<<<<<< HEAD
-import { LanguageService } from './language.service';
-=======
-=======
-import { RouterModule } from '@angular/router';
->>>>>>> 676d30c (contact form)
->>>>>>> 9b4add6 (contact form)
+import { Header } from '../header/header';
+import { Hero } from '../hero/hero';
+import { About } from '../about/about';
+import { Footer } from '../footer/footer';
+import { LanguageService } from '../language.service';
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterModule],
->>>>>>> 6573d02 (contact form)
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+  selector: 'app-home',
+  imports: [Header, Hero, About, Footer],
+  templateUrl: './home.html',
+  styleUrl: './home.scss',
 })
-<<<<<<< HEAD
-export class App {
-<<<<<<< HEAD
-  protected readonly title = signal('portfolio-2');
-=======
+export class Home {
   private languageService = inject(LanguageService);
 
   avatarUrl = './images/mf-avatar.svg';
-=======
-<<<<<<< HEAD
-export class AppComponent {
-  avatarUrl = './images/matt.svg';
->>>>>>> 9b4add6 (contact form)
   devicesUrl = './images/hero-devices.svg';
   footerLogoUrl = './images/matt2.svg';
   socialLinks = [
@@ -82,8 +53,4 @@ export class AppComponent {
     this.currentLang.set(lang);
     this.languageService.setLanguage(lang);
   }
->>>>>>> 6573d02 (contact form)
 }
-=======
-export class App {}
->>>>>>> 676d30c (contact form)

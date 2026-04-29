@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div>
   <header class="header-container">
     <a href="#">
@@ -55,3 +56,26 @@
     <img class="footer-img" src="https://mattfarley.ca/img/made-with-bulma--white.png" />
   </footer>
 </div>
+=======
+<<<<<<< HEAD
+<app-header
+  [isDark]="isDark()"
+  [currentLang]="currentLang()"
+  (themeToggle)="toggleTheme()"
+  (langChange)="switchLang($event)"
+></app-header>
+<app-hero [avatarUrl]="avatarUrl" [devicesUrl]="devicesUrl"></app-hero>
+=======
+<<<<<<< HEAD
+<app-header></app-header>
+<app-hero
+  [avatarUrl]="'/images/mf-avatar.svg'"
+  [devicesUrl]="'/images/hero-devices.svg'"
+></app-hero>
+>>>>>>> 9b4add6 (contact form)
+<app-about></app-about>
+<app-footer [logoUrl]="footerLogoUrl" [socialLinks]="socialLinks"></app-footer>
+=======
+<router-outlet></router-outlet>
+>>>>>>> 676d30c (contact form)
+>>>>>>> 6573d02 (contact form)

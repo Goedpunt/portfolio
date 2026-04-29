@@ -1,0 +1,39 @@
+{
+  "APP": {
+    "PAGE_TITLE": "Matt Farley — Designer, Ontwikkelaar & Mentor"
+  },
+  "HEADER": {
+    "MENTORSHIP": "Mentorschap",
+<<<<<<< HEAD
+    "SAY_HELLO": "Zeg Hallo",
+=======
+    "CONTACT_ME": "Neem Contact Op",
+>>>>>>> 9b4add6 (contact form)
+    "SWITCH_TO_LIGHT": "Schakel naar lichte modus",
+    "SWITCH_TO_DARK": "Schakel naar donkere modus"
+  },
+  "HERO": {
+    "TITLE": "Designer, Frontend Ontwikkelaar & Mentor",
+    "SUBTITLE": "Ik ontwerp en codeer prachtig eenvoudige dingen, en ik hou van wat ik doe."
+  },
+  "ABOUT": {
+    "TITLE": "Hoi, ik ben Matt. Leuk je te ontmoeten.",
+    "TEXT": "Sinds ik 12 jaar geleden begon als freelance designer, heb ik op afstand gewerkt voor bureaus, startups geadviseerd en samengewerkt met getalenteerde mensen om digitale producten te maken voor zowel zakelijk als consumentengebruik. Ik ben rustig zelfverzekerd, van nature nieuwsgierig en altijd bezig met het verbeteren van mijn vaardigheden."
+  },
+  "FOOTER": {
+    "TAGLINE": "Leven, leren & elke dag een beetje beter worden.",
+    "CREDIT": "Met liefde gemaakt door mij ⓒ tweeduizendvierentwintig"
+<<<<<<< HEAD
+=======
+  },
+  "CONTACT": {
+    "TITLE": "Neem Contact Op",
+    "NAME": "Naam",
+    "EMAIL": "E-mail",
+    "MESSAGE": "Bericht",
+    "SUBMIT": "Verstuur Bericht",
+    "SUCCESS": "Je bericht is verzonden!",
+    "ERROR": "Er is iets misgegaan. Probeer het opnieuw."
+>>>>>>> 9b4add6 (contact form)
+  }
+}
