@@ -1,37 +1,20 @@
-<<<<<<< HEAD
 import { Component, signal, effect, inject } from '@angular/core';
-=======
-import { Component } from '@angular/core';
-<<<<<<< HEAD
->>>>>>> 9b4add6 (contact form)
-import { Header } from './header/header';
-import { Hero } from './hero/hero';
-import { About } from './about/about';
-import { Footer } from './footer/footer';
-<<<<<<< HEAD
-import { LanguageService } from './language.service';
-=======
-=======
-import { RouterModule } from '@angular/router';
->>>>>>> 676d30c (contact form)
->>>>>>> 9b4add6 (contact form)
+import { Header } from '../header/header';
+import { Hero } from '../hero/hero';
+import { About } from '../about/about';
+import { Footer } from '../footer/footer';
+import { LanguageService } from '../language.service';
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterModule],
-  templateUrl: './app.html',
-  styleUrl: './app.scss',
+  selector: 'app-home',
+  imports: [Header, Hero, About, Footer],
+  templateUrl: './home.html',
+  styleUrl: './home.scss',
 })
-<<<<<<< HEAD
-export class App {
+export class Home {
   private languageService = inject(LanguageService);
 
   avatarUrl = './images/mf-avatar.svg';
-=======
-<<<<<<< HEAD
-export class AppComponent {
-  avatarUrl = './images/matt.svg';
->>>>>>> 9b4add6 (contact form)
   devicesUrl = './images/hero-devices.svg';
   footerLogoUrl = './images/matt2.svg';
   socialLinks = [
@@ -71,6 +54,3 @@ export class AppComponent {
     this.languageService.setLanguage(lang);
   }
 }
-=======
-export class App {}
->>>>>>> 676d30c (contact form)
