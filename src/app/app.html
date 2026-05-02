@@ -1,9 +1,1 @@
-<app-header
-  [isDark]="isDark()"
-  [currentLang]="currentLang()"
-  (themeToggle)="toggleTheme()"
-  (langChange)="switchLang($event)"
-></app-header>
-<app-hero [avatarUrl]="avatarUrl" [devicesUrl]="devicesUrl"></app-hero>
-<app-about></app-about>
-<app-footer [logoUrl]="footerLogoUrl" [socialLinks]="socialLinks"></app-footer>
+<router-outlet></router-outlet>
