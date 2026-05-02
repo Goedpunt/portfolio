@@ -31,7 +31,6 @@ export class Home {
 
   constructor() {
     this.languageService.init();
-
     effect(() => {
       const dark = this.isDark();
       document.documentElement.classList.toggle('dark-mode', dark);

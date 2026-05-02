@@ -1,38 +1,3 @@
-<<<<<<< HEAD
-import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
-import { provideRouter } from '@angular/router';
-=======
-<<<<<<< HEAD
-import { ApplicationConfig } from '@angular/core';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { providePrimeNG } from 'primeng/config';
-import Aura from '@primeuix/themes/aura';
-import { definePreset } from '@primeuix/themes';
-import { provideHttpClient } from '@angular/common/http';
-import { provideTranslateService } from '@ngx-translate/core';
-import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
-=======
-<<<<<<< HEAD
-import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
-import { provideRouter } from '@angular/router';
->>>>>>> 9b4add6 (contact form)
->>>>>>> 6573d02 (contact form)
-
-import { routes } from './app.routes';
-
-export const appConfig: ApplicationConfig = {
-  providers: [
-<<<<<<< HEAD
-    provideBrowserGlobalErrorListeners(),
-    provideRouter(routes)
-  ]
-=======
-<<<<<<< HEAD
-=======
-    provideBrowserGlobalErrorListeners(),
-    provideRouter(routes)
-  ]
-=======
 import { ApplicationConfig } from '@angular/core';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { providePrimeNG } from 'primeng/config';
@@ -167,7 +132,6 @@ const MyPreset = definePreset(Aura, {
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
->>>>>>> 9b4add6 (contact form)
     provideHttpClient(),
     provideAnimationsAsync(),
     providePrimeNG({
@@ -180,15 +144,9 @@ export const appConfig: ApplicationConfig = {
       fallbackLang: 'en',
     }),
     ...provideTranslateHttpLoader(),
-<<<<<<< HEAD
-  ],
-=======
     provideStore(),
     provideState(contactFeature),
     provideEffects([ContactEffects]),
     provideStoreDevtools({ maxAge: 25 }),
   ],
->>>>>>> 676d30c (contact form)
->>>>>>> 9b4add6 (contact form)
->>>>>>> 6573d02 (contact form)
 };

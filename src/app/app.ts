@@ -1,89 +1,10 @@
-<<<<<<< HEAD
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
-@Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-=======
-<<<<<<< HEAD
-import { Component, signal, effect, inject } from '@angular/core';
-=======
 import { Component } from '@angular/core';
-<<<<<<< HEAD
->>>>>>> 9b4add6 (contact form)
-import { Header } from './header/header';
-import { Hero } from './hero/hero';
-import { About } from './about/about';
-import { Footer } from './footer/footer';
-<<<<<<< HEAD
-import { LanguageService } from './language.service';
-=======
-=======
 import { RouterModule } from '@angular/router';
->>>>>>> 676d30c (contact form)
->>>>>>> 9b4add6 (contact form)
 
 @Component({
   selector: 'app-root',
   imports: [RouterModule],
->>>>>>> 6573d02 (contact form)
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.scss',
 })
-<<<<<<< HEAD
-export class App {
-<<<<<<< HEAD
-  protected readonly title = signal('portfolio-2');
-=======
-  private languageService = inject(LanguageService);
-
-  avatarUrl = './images/mf-avatar.svg';
-=======
-<<<<<<< HEAD
-export class AppComponent {
-  avatarUrl = './images/matt.svg';
->>>>>>> 9b4add6 (contact form)
-  devicesUrl = './images/hero-devices.svg';
-  footerLogoUrl = './images/matt2.svg';
-  socialLinks = [
-    { icon: './images/twitter.svg', href: '#', label: 'Twitter' },
-    { icon: './images/basket.svg', href: '#', label: 'Dribbble' },
-    { icon: './images/linkedin.svg', href: '#', label: 'LinkedIn' },
-    { icon: './images/ih.svg', href: '#', label: 'Indie Hackers' },
-    { icon: './images/pinterest.svg', href: '#', label: 'Pinterest' },
-    { icon: './images/mail.svg', href: '#', label: 'Email' },
-  ];
-
-  isDark = signal(this.getInitialTheme());
-  currentLang = signal(this.languageService.getCurrentLang());
-
-  constructor() {
-    this.languageService.init();
-
-    effect(() => {
-      const dark = this.isDark();
-      document.documentElement.classList.toggle('dark-mode', dark);
-      localStorage.setItem('theme', dark ? 'dark' : 'light');
-    });
-  }
-
-  private getInitialTheme(): boolean {
-    const stored = localStorage.getItem('theme');
-    if (stored) return stored === 'dark';
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
-
-  toggleTheme() {
-    this.isDark.update((v) => !v);
-  }
-
-  switchLang(lang: string) {
-    this.currentLang.set(lang);
-    this.languageService.setLanguage(lang);
-  }
->>>>>>> 6573d02 (contact form)
-}
-=======
 export class App {}
->>>>>>> 676d30c (contact form)

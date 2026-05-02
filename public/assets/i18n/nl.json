@@ -4,11 +4,7 @@
   },
   "HEADER": {
     "MENTORSHIP": "Mentorschap",
-<<<<<<< HEAD
-    "SAY_HELLO": "Zeg Hallo",
-=======
     "CONTACT_ME": "Neem Contact Op",
->>>>>>> 9b4add6 (contact form)
     "SWITCH_TO_LIGHT": "Schakel naar lichte modus",
     "SWITCH_TO_DARK": "Schakel naar donkere modus"
   },
@@ -23,8 +19,6 @@
   "FOOTER": {
     "TAGLINE": "Leven, leren & elke dag een beetje beter worden.",
     "CREDIT": "Met liefde gemaakt door mij ⓒ tweeduizendvierentwintig"
-<<<<<<< HEAD
-=======
   },
   "CONTACT": {
     "TITLE": "Neem Contact Op",
@@ -34,6 +28,5 @@
     "SUBMIT": "Verstuur Bericht",
     "SUCCESS": "Je bericht is verzonden!",
     "ERROR": "Er is iets misgegaan. Probeer het opnieuw."
->>>>>>> 9b4add6 (contact form)
   }
 }

@@ -1,0 +1,25 @@
+.about-section {
+  background-color: var(--p-primary-600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  transition: background-color 0.4s ease;
+}
+
+.about-card {
+  max-width: 700px;
+  text-align: center;
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  p {
+    color: #ede0ff;
+    line-height: 1.7;
+  }
+}
