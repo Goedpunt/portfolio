@@ -9,7 +9,6 @@ import { LanguageService } from '../language.service';
   selector: 'app-home',
   imports: [Header, Hero, About, Footer],
   templateUrl: './home.html',
-  styleUrl: './home.scss',
 })
 export class Home {
   private languageService = inject(LanguageService);

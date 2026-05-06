@@ -1,4 +1,4 @@
-import { Component, inject, OnDestroy, signal, effect } from '@angular/core';
+import { Component, inject, OnDestroy } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
@@ -8,11 +8,11 @@ import { TextareaModule } from 'primeng/textarea';
 import { MessageModule } from 'primeng/message';
 import { RouterModule } from '@angular/router';
 import { AsyncPipe } from '@angular/common';
-import { CardModule } from 'primeng/card';
 import { ContactActions } from './contact.actions';
-import { selectIsSubmitting, selectIsSuccess, selectContactError } from './contact.selectors';
+import { selectSubmitting, selectSuccess, selectError } from './contact.reducer';
 import { Header } from '../header/header';
 import { LanguageService } from '../language.service';
+import { signal, effect } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -25,7 +25,6 @@ import { LanguageService } from '../language.service';
     MessageModule,
     RouterModule,
     AsyncPipe,
-    CardModule,
     Header,
   ],
   templateUrl: './contact.html',
@@ -35,9 +34,9 @@ export class Contact implements OnDestroy {
   private store = inject(Store);
   private languageService = inject(LanguageService);
 
-  submitting$ = this.store.select(selectIsSubmitting);
-  success$ = this.store.select(selectIsSuccess);
-  error$ = this.store.select(selectContactError);
+  submitting$ = this.store.select(selectSubmitting);
+  success$ = this.store.select(selectSuccess);
+  error$ = this.store.select(selectError);
 
   isDark = signal(this.getInitialTheme());
   currentLang = signal(this.languageService.getCurrentLang());
@@ -70,12 +69,12 @@ export class Contact implements OnDestroy {
   }
 
   onSubmit() {
-    if (this.name && this.email && this.message) {
+    if (this.name.trim() && this.email.trim() && this.message.trim()) {
       this.store.dispatch(
         ContactActions.submitForm({
-          name: this.name,
-          email: this.email,
-          message: this.message,
+          name: this.name.trim(),
+          email: this.email.trim(),
+          message: this.message.trim(),
         }),
       );
     }

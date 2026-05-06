@@ -39,4 +39,4 @@ export const contactFeature = createFeature({
   ),
 });
 
-export const { selectSubmitting, selectSuccess, selectError } = contactFeature;
+export const { selectSubmitting, selectSuccess, selectError, selectContactState } = contactFeature;

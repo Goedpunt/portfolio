@@ -15,11 +15,11 @@
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: var(--p-text-color);
   }
 
   p {
-    color: #ede0ff;
+    color: var(--p-text-color);
     line-height: 1.7;
   }
 }

@@ -5,19 +5,26 @@
   (langChange)="switchLang($event)"
 ></app-header>
 <div class="contact-page">
-  <div class="contact-container">
-    <a routerLink="/" class="back-link">← Back</a>
-    <h1>{{ 'CONTACT.TITLE' | translate }}</h1>
+  <p-card styleClass="contact-card">
+    <ng-template pTemplate="header">
+      <div class="contact-card-header">
+        <a routerLink="/" class="back-link">{{ 'CONTACT.BACK' | translate }}</a>
+        <h1>{{ 'CONTACT.TITLE' | translate }}</h1>
+      </div>
+    </ng-template>
 
-    @if (success$ | async) {
+    @let success = success$ | async;
+    @let error = error$ | async;
+
+    @if (success) {
       <p-message severity="success" [text]="'CONTACT.SUCCESS' | translate" />
     }
 
-    @if (error$ | async; as error) {
+    @if (error) {
       <p-message severity="error" [text]="'CONTACT.ERROR' | translate" />
     }
 
-    @if (!(success$ | async)) {
+    @if (!success) {
       <form class="contact-form" (ngSubmit)="onSubmit()">
         <div class="form-field">
           <label for="name">{{ 'CONTACT.NAME' | translate }}</label>
@@ -46,5 +53,5 @@
         />
       </form>
     }
-  </div>
+  </p-card>
 </div>

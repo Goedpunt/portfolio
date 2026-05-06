@@ -22,6 +22,7 @@
   },
   "CONTACT": {
     "TITLE": "Neem Contact Op",
+    "BACK": "← Terug",
     "NAME": "Naam",
     "EMAIL": "E-mail",
     "MESSAGE": "Bericht",

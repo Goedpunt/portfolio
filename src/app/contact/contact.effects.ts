@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { ContactActions } from './contact.actions';
-import { map, catchError, switchMap, of, delay } from 'rxjs';
+import { map, switchMap, of, delay } from 'rxjs';
 
 @Injectable()
 export class ContactEffects {
@@ -13,8 +13,8 @@ export class ContactEffects {
       switchMap(() =>
         of(true).pipe(
           delay(1000),
+          // TODO: replace with real HTTP call e.g. this.http.post('/api/contact', payload)
           map(() => ContactActions.submitFormSuccess()),
-          catchError(() => of(ContactActions.submitFormFailure({ error: 'Failed to send' }))),
         ),
       ),
     ),
