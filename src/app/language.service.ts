@@ -29,6 +29,6 @@ export class LanguageService {
   private apply(lang: string) {
     this.translate.use(lang);
     document.documentElement.lang = lang;
-    this.translate.get('APP.PAGE_TITLE').subscribe((t) => this.title.setTitle(t));
+    this.translate.get('APP.PAGE_TITLE').subscribe((t: string) => this.title.setTitle(t));
   }
 }

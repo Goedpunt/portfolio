@@ -4,10 +4,18 @@ import { ToggleSwitchModule } from 'primeng/toggleswitch';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { SelectModule } from 'primeng/select';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [ButtonModule, ToggleSwitchModule, FormsModule, TranslateModule, SelectModule],
+  imports: [
+    ButtonModule,
+    ToggleSwitchModule,
+    FormsModule,
+    TranslateModule,
+    SelectModule,
+    RouterModule,
+  ],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })

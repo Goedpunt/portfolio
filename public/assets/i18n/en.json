@@ -4,7 +4,7 @@
   },
   "HEADER": {
     "MENTORSHIP": "Mentorship",
-    "SAY_HELLO": "Say Hello",
+    "CONTACT_ME": "Contact Me",
     "SWITCH_TO_LIGHT": "Switch to light mode",
     "SWITCH_TO_DARK": "Switch to dark mode"
   },
@@ -19,5 +19,15 @@
   "FOOTER": {
     "TAGLINE": "Living, learning, & leveling up one day at a time.",
     "CREDIT": "Handcrafted by me ⓒ twentytwentyfour"
+  },
+  "CONTACT": {
+    "TITLE": "Contact Me",
+    "BACK": "← Back",
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "MESSAGE": "Message",
+    "SUBMIT": "Send Message",
+    "SUCCESS": "Your message has been sent!",
+    "ERROR": "Something went wrong. Please try again."
   }
 }

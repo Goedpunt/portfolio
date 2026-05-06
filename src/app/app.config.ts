@@ -6,6 +6,13 @@ import { definePreset } from '@primeuix/themes';
 import { provideHttpClient } from '@angular/common/http';
 import { provideTranslateService } from '@ngx-translate/core';
 import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
+import { provideStore, provideState } from '@ngrx/store';
+import { provideEffects } from '@ngrx/effects';
+import { provideStoreDevtools } from '@ngrx/store-devtools';
+import { provideRouter } from '@angular/router';
+import { routes } from './app.routes';
+import { contactFeature } from './contact/contact.reducer';
+import { ContactEffects } from './contact/contact.effects';
 
 const MyPreset = definePreset(Aura, {
   semantic: {
@@ -47,7 +54,7 @@ const MyPreset = definePreset(Aura, {
       colorScheme: {
         light: {
           root: {
-            background: '{primary.500}',
+            background: '{primary.400}',
             color: '{primary.50}',
           },
         },
@@ -124,6 +131,7 @@ const MyPreset = definePreset(Aura, {
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideRouter(routes),
     provideHttpClient(),
     provideAnimationsAsync(),
     providePrimeNG({
@@ -136,5 +144,9 @@ export const appConfig: ApplicationConfig = {
       fallbackLang: 'en',
     }),
     ...provideTranslateHttpLoader(),
+    provideStore(),
+    provideState(contactFeature),
+    provideEffects([ContactEffects]),
+    provideStoreDevtools({ maxAge: 25 }),
   ],
 };
