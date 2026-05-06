@@ -8,12 +8,22 @@
 
 .contact-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 650px; // 🔥 controls card width
+}
+
+.contact-card {
+  border-radius: 16px;
+}
+
+/* Header */
+.contact-card-header {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 8px;
+  padding: 1.5rem;
 
   h1 {
+    margin: 0;
     font-size: 2rem;
     font-weight: 700;
     color: var(--p-primary-600);
@@ -34,6 +44,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  
 }
 
 .form-field {
@@ -48,5 +59,12 @@
 
   input, textarea {
     width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
   }
+}
+
+
+p-button {
+  margin-top: 10px;
 }

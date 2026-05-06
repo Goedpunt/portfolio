@@ -13,7 +13,7 @@ import { selectSubmitting, selectSuccess, selectError } from './contact.reducer'
 import { Header } from '../header/header';
 import { LanguageService } from '../language.service';
 import { signal, effect } from '@angular/core';
-
+import { CardModule } from 'primeng/card';
 @Component({
   selector: 'app-contact',
   imports: [
@@ -26,6 +26,7 @@ import { signal, effect } from '@angular/core';
     RouterModule,
     AsyncPipe,
     Header,
+    CardModule,
   ],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',

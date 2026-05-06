@@ -54,7 +54,7 @@ const MyPreset = definePreset(Aura, {
       colorScheme: {
         light: {
           root: {
-            background: '{primary.600}',
+            background: '{primary.400}',
             color: '{primary.50}',
           },
         },
@@ -73,8 +73,7 @@ const MyPreset = definePreset(Aura, {
             primary: {
               borderColor: '{primary.600}',
               color: '{primary.600}',
-              hoverBackground: '{primary.600}',
-              hoverColor: '#ffffff',
+              hoverBackground: '{primary.200}',
             },
           },
         },
@@ -83,8 +82,7 @@ const MyPreset = definePreset(Aura, {
             primary: {
               borderColor: '{primary.200}',
               color: '{primary.200}',
-              hoverBackground: '{primary.200}',
-              hoverColor: '#1a0033',
+              hoverBackground: '{primary.50}',
             },
           },
         },
